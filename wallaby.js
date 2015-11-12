@@ -4,6 +4,7 @@ module.exports = function (wallaby) {
   return {
     files: [
       {pattern: 'node_modules/babel/node_modules/babel-core/browser-polyfill.js', instrument: false},
+      {pattern: 'node_modules/babel-core/browser-polyfill.js', instrument: false},
       'src/*.js'
     ],
 
