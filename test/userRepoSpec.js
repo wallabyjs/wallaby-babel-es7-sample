@@ -7,11 +7,6 @@ describe('Wallaby.js ES7 support via Babel', () => {
     expect(userRepo.myProp).toBe(42);
   });
 
-  it('should support decorators', () => {
-    expect(UserRepository.howAwesome)
-      .toBe('super awesome');
-  });
-
   it('should support async/await', async done => {
     var users = await userRepo.fetchUsers();
     expect(users.length).toBe(2);
