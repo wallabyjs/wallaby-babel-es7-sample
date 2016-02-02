@@ -2,11 +2,11 @@ module.exports = function (wallaby) {
   return {
     files: [
       {pattern: 'node_modules/babel-polyfill/dist/polyfill.js', instrument: false},
-      'src/*.js'
+      'src/**/*.js'
     ],
 
     tests: [
-      'test/*Spec.js'
+      'test/**/*Spec.js'
     ],
 
     compilers: {
