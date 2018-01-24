@@ -9,7 +9,7 @@ describe('Wallaby.js ES7 support via Babel', () => {
 
   it('should support async/await', async done => {
     var users = await userRepo.fetchUsers();
-    expect(users.length).toBe(2);
+    expect(users/*?*/.length).toBe(2);
     done();
   });
 
